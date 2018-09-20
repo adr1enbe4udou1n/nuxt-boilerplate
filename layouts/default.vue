@@ -6,8 +6,8 @@
           <h3 class="text-muted">Nuxt Boilerplate</h3>
           <b-nav class="nav-pills">
             <b-nav-item to="/" exact>Home</b-nav-item>
-            <b-nav-item to="about">About</b-nav-item>
-            <b-nav-item to="contact">Contact</b-nav-item>
+            <b-nav-item to="/about">About</b-nav-item>
+            <b-nav-item to="/contact">Contact</b-nav-item>
           </b-nav>
         </div>
       </b-container>
