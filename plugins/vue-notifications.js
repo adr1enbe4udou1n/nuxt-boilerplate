@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueNotifications from 'vue-notifications'
 import Noty from 'noty'
 
-function toast ({title, message, type, timeout, cb}) {
+function toast ({ title, message, type, timeout, cb }) {
   if (type === VueNotifications.types.warn) {
     type = 'warning'
   }
@@ -12,7 +12,6 @@ function toast ({title, message, type, timeout, cb}) {
     theme: 'bootstrap-v4',
     timeout: 2000,
     text: message,
-    timeout,
     type
   }).show()
 }
