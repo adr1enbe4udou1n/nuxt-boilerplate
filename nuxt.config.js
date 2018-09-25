@@ -18,6 +18,19 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Global CSS
+  */
+  css: [
+    '@/assets/css/main.scss'
+  ],
+  /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: [
+    { src: '~/plugins/vue-notifications', ssr: false },
+    '~plugins/vue-feather-icons'
+  ],
+  /*
   ** Nuxt.js modules
   */
   modules: [
@@ -51,14 +64,5 @@ module.exports = {
     },
     vendor: ['bootstrap-vue'],
     extractCSS: true
-  },
-
-  css: [
-    '@/assets/css/main.scss'
-  ],
-
-  plugins: [
-    { src: '~/plugins/vue-notifications', ssr: false },
-    '~plugins/vue-feather-icons'
-  ]
+  }
 }
