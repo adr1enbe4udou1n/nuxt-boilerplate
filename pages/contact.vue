@@ -69,7 +69,7 @@
 <script>
 export default {
   name: 'Contact',
-  data () {
+  data() {
     return {
       form: {
         email: '',
@@ -83,12 +83,15 @@ export default {
           text: 'Select One',
           value: null
         },
-        'Carrots', 'Beans', 'Tomatoes', 'Corn'
+        'Carrots',
+        'Beans',
+        'Tomatoes',
+        'Corn'
       ]
     }
   },
   methods: {
-    onSubmit (evt) {
+    onSubmit(evt) {
       evt.preventDefault()
       alert(JSON.stringify(this.form))
     }

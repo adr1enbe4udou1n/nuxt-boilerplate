@@ -1,9 +1,6 @@
 import Vue from 'vue'
 
-import {
-  HeartIcon,
-  CodeIcon
-} from 'vue-feather-icons'
+import { HeartIcon, CodeIcon } from 'vue-feather-icons'
 
 let icons = {
   HeartIcon,
@@ -11,7 +8,7 @@ let icons = {
 }
 
 const VuePlugin = {
-  install: function (Vue) {
+  install: function(Vue) {
     /**
      * Chargement des icônes SVG
      */
