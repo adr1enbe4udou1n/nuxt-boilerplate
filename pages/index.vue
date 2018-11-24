@@ -13,13 +13,12 @@
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-
       <!-- Text slides with image -->
       <b-carousel-slide
         caption="First slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
         img-src="https://picsum.photos/1024/480/?image=52"
-      />
+      ></b-carousel-slide>
 
       <!-- Slides with custom text -->
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
@@ -27,10 +26,14 @@
       </b-carousel-slide>
 
       <!-- Slides with image only -->
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58" />
+      <b-carousel-slide
+        img-src="https://picsum.photos/1024/480/?image=58"
+      ></b-carousel-slide>
 
       <!-- Slides with img slot -->
-      <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+      <!--
+        Note the classes .d-block and .img-fluid to prevent browser default image alignment
+      -->
       <b-carousel-slide>
         <img
           slot="img"
@@ -39,58 +42,49 @@
           height="480"
           src="https://picsum.photos/1024/480/?image=55"
           alt="image slot"
-        >
+        />
       </b-carousel-slide>
 
       <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-      <b-carousel-slide
-        caption="Blank Image"
-        img-blank
-        img-alt="Blank image"
-      >
+      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          eros felis, tincidunt a tincidunt eget, convallis vel est. Ut pellentesque
-          ut lacus vel interdum.
+          eros felis, tincidunt a tincidunt eget, convallis vel est. Ut
+          pellentesque ut lacus vel interdum.
         </p>
       </b-carousel-slide>
-
     </b-carousel>
 
     <div class="row marketing">
       <h4>HTML5 Boilerplate</h4>
-      <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+      <p>
+        HTML5 Boilerplate is a professional front-end template for building
+        fast, robust, and adaptable web apps or sites.
+      </p>
 
       <h4>Sass</h4>
-      <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+      <p>
+        Sass is the most mature, stable, and powerful professional grade CSS
+        extension language in the world.
+      </p>
 
       <h4>Bootstrap</h4>
-      <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+      <p>
+        Sleek, intuitive, and powerful mobile first front-end framework for
+        faster and easier web development.
+      </p>
 
-      <b-btn
-        class="mr-1"
-        @click="openSwal"
-      >Sweet !</b-btn>
-      <b-btn
-        class="mr-1"
-        variant="success"
-        @click="showSuccessMsg()"
-      >Noty !</b-btn>
-      <b-btn
-        class="mr-1"
-        variant="info"
-        @click="showInfoMsg()"
-      >Noty !</b-btn>
-      <b-btn
-        class="mr-1"
-        variant="warning"
-        @click="showWarnMsg()"
-      >Noty !</b-btn>
-      <b-btn
-        class="mr-1"
-        variant="danger"
-        @click="showErrorMsg()"
-      >Noty !</b-btn>
+      <b-btn class="mr-1" @click="openSwal">Sweet !</b-btn>
+      <b-btn class="mr-1" variant="success" @click="showSuccessMsg()">
+        Noty !
+      </b-btn>
+      <b-btn class="mr-1" variant="info" @click="showInfoMsg()"> Noty ! </b-btn>
+      <b-btn class="mr-1" variant="warning" @click="showWarnMsg()">
+        Noty !
+      </b-btn>
+      <b-btn class="mr-1" variant="danger" @click="showErrorMsg()">
+        Noty !
+      </b-btn>
     </div>
   </div>
 </template>
