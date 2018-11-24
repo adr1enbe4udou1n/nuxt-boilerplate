@@ -63,7 +63,6 @@ module.exports = {
         })
       }
     },
-    vendor: ['bootstrap-vue'],
     extractCSS: true
   }
 }
