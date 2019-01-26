@@ -2,7 +2,7 @@
   "name": "nuxt-boilerplate",
   "version": "1.0.0",
   "description": "Nuxt Boilerplate",
-  "author": "dev@useweb.com",
+  "author": "me@example.com",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -17,14 +17,14 @@
     "@nuxtjs/dotenv": "^1.1.1",
     "bootstrap-vue": "^2.0.0-rc.11",
     "nuxt": "^2.3.4",
-    "vue-feather-icons": "^4.7.1",
+    "vue-feather-icons": "^4.10.0",
     "vue-notifications": "^0.9.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "bootstrap": "^4.2.1",
-    "eslint": "^5.12.0",
-    "eslint-config-prettier": "^3.1.0",
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^4.0.0",
     "eslint-loader": "^2.1.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^5.1.0",
@@ -32,8 +32,8 @@
     "node-sass": "^4.11.0",
     "noty": "^3.2.0-beta",
     "popper.js": "^1.14.6",
-    "prettier": "^1.15.3",
+    "prettier": "^1.16.1",
     "sass-loader": "^7.1.0",
-    "sweetalert2": "^7.33.1"
+    "sweetalert2": "^8.0.1"
   }
 }

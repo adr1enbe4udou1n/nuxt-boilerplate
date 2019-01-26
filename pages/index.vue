@@ -131,7 +131,7 @@ export default {
       this.sliding = false
     },
     openSwal() {
-      swal({
+      swal.fire({
         title: 'Yo!',
         text: 'Yeaaah!',
         type: 'success',

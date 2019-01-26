@@ -19,7 +19,7 @@
       <b-container>
         <p class="float-right">
           <i class="svg-icon"><CodeIcon></CodeIcon></i> with
-          <i class="svg-icon"><HeartIcon></HeartIcon></i> by Useweb
+          <i class="svg-icon"><HeartIcon></HeartIcon></i> by Company
         </p>
       </b-container>
     </div>
