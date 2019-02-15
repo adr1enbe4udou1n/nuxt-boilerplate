@@ -1,31 +1,35 @@
+const pkg = require('./package')
+
 module.exports = {
+  mode: 'universal',
+
   /*
    ** Headers of the page
    */
   head: {
-    title: 'nuxt-boilerplate',
+    title: pkg.name,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Nuxt Boilerplate Main Site'
-      }
+      { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+
   router: {
     linkActiveClass: 'active'
   },
+
   /*
    ** Customize the progress bar color
    */
   loading: { color: '#3B8070' },
+
   /*
    ** Global CSS
    */
   css: ['@/assets/css/main.scss'],
+
   /*
    ** Plugins to load before mounting the App
    */
@@ -33,6 +37,7 @@ module.exports = {
     { src: '~/plugins/vue-notifications', ssr: false },
     '~plugins/vue-feather-icons'
   ],
+
   /*
    ** Nuxt.js modules
    */
@@ -41,23 +46,27 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
     // Doc: https://bootstrap-vue.js.org/docs/
-    ['bootstrap-vue/nuxt', { css: false }]
+    ['bootstrap-vue/nuxt', { bootstrapCss: false }],
+    '@nuxtjs/pwa'
   ],
+
   /*
    ** Axios module configuration
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
+
   /*
    ** Build configuration
    */
   build: {
     /*
-     ** Run ESLint on save
+     ** You can extend webpack config here
      */
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend(config, ctx) {
+      // Run ESLint on save
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,

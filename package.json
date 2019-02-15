@@ -15,23 +15,22 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.2",
     "@nuxtjs/dotenv": "^1.1.1",
+    "@nuxtjs/pwa": "^3.0.0-beta.6",
     "bootstrap-vue": "^2.0.0-rc.12",
+    "bootstrap": "^4.3.1",
     "nuxt": "^2.4.3",
     "vue-feather-icons": "^4.10.0",
     "vue-notifications": "^0.9.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "bootstrap": "^4.3.1",
     "eslint": "^5.12.1",
     "eslint-config-prettier": "^4.0.0",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^5.2.1",
-    "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
     "noty": "^3.2.0-beta",
-    "popper.js": "^1.14.6",
     "prettier": "^1.16.1",
     "sass-loader": "^7.1.0",
     "sweetalert2": "^8.0.7"
