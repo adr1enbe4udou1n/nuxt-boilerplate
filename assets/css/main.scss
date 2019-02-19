@@ -5,9 +5,7 @@
 @import "~bootstrap/scss/bootstrap";
 
 // Plugins
-@import "~noty/src/noty";
 @import "~sweetalert2/src/sweetalert2";
-@import "~noty/src/themes/bootstrap-v4";
 
 body {
   padding-top: 20px;
@@ -63,11 +61,6 @@ body {
   align-self: center;
   top: .125em;
   position: relative;
-}
-
-.feather {
-  height: 1em;
-  width: 1em;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,5 +1,9 @@
 <template>
   <div>
+    <no-ssr>
+      <notifications group="main" />
+    </no-ssr>
+
     <div class="header">
       <b-container>
         <div class="d-flex justify-content-between">
@@ -13,13 +17,14 @@
       </b-container>
     </div>
 
-    <b-container> <nuxt></nuxt> </b-container>
+    <b-container>
+      <nuxt></nuxt>
+    </b-container>
 
     <div class="footer">
       <b-container>
         <p class="float-right">
-          <i class="svg-icon"><CodeIcon></CodeIcon></i> with
-          <i class="svg-icon"><HeartIcon></HeartIcon></i> by Company
+          Made with Love by Company
         </p>
       </b-container>
     </div>
