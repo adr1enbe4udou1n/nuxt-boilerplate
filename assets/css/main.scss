@@ -7,6 +7,15 @@
 // Plugins
 @import "~sweetalert2/src/sweetalert2";
 
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
 body {
   padding-top: 20px;
   padding-bottom: 20px;
