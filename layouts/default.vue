@@ -18,7 +18,7 @@
     </div>
 
     <b-container>
-      <nuxt></nuxt>
+      <nuxt :nuxt-child-key="$route.fullPath"></nuxt>
     </b-container>
 
     <div class="footer">
